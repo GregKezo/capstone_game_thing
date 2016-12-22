@@ -7,7 +7,8 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-mongoose.connect( 'mongodb://localhost/react-redux-router-auth' );
+var mongoUri = process.env.MONGODB_URI || 'mongodb://localhost/capstone_game_thing'
+mongoose.connect(mongoUri);
 
 var routes = require('./routes/index');
 var auth = require('./routes/auth');
@@ -35,7 +36,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(require('express-session')({
-  secret: process.env.SESSION_SECRET || 'secret',
+  secret: process.env.SESSION_SECRET || 'flyingmonkeys',
   resave: false,
   saveUninitialized: false
 }));
