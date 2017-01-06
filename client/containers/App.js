@@ -26,9 +26,6 @@ class App extends React.Component {
         return (
           <div>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/products">Products</Link></li>
-            <li><Link to="/cart">Cart</Link></li>
-            <li><Link to="/history">History</Link></li>
             <li><a style={{ cursor: 'pointer' }} onClick={this.logout}>Logout</a></li>
           </div>
         )
@@ -54,7 +51,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <nav className="purple">
+        <nav className="light-blue darken-4 navigation">
           <div className="nav-wrapper">
             <Link to="/" className="brand-logo">My Logo</Link>
             <a href="#" data-activates="mobile" className="button-collapse">
@@ -65,7 +62,7 @@ class App extends React.Component {
             </ul>
             <ul className="side-nav" id="mobile">
               {this.navs()}
-            </ul>  
+            </ul>
           </div>
         </nav>
         <Flash />
@@ -80,4 +77,3 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps)(App);
-

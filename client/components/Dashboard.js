@@ -1,9 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Game from './Game';
+import HighScore from './HighScore';
 
-const Dashboard = ({ user }) => (
-  <div>
-    Welcome
+const Dashboard = ({ user }, props) => (
+  <div className="row">
+      <Game />
+      <HighScore />
   </div>
 );
 

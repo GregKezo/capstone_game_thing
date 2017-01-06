@@ -8,6 +8,8 @@ import Dashboard from './components/Dashboard';
 import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
 import NoMatch from './components/NoMatch';
+import Game from './components/Game';
+import HighScore from './components/HighScore';
 
 const AdminAccess = UserAuthWrapper({
   authSelector: state => state.user,
@@ -34,4 +36,3 @@ export default (
     </Route>
   </Route>
 )
-
