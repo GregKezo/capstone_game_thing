@@ -66,7 +66,7 @@ class Level extends React.Component {
                  />
                  <TileMap
                     style={{ top: Math.floor(-63 * this.context.scale) }}
-                    src="assets/buildings.png"
+                    src="/assets/buildings.png"
                     rows={1}
                     columns={6}
                     tileSize={512}

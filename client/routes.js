@@ -8,8 +8,7 @@ import Dashboard from './components/Dashboard';
 import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
 import NoMatch from './components/NoMatch';
-import Game from './components/Game';
-import HighScore from './components/HighScore';
+import Asteroids from './components/Asteroids';
 
 const AdminAccess = UserAuthWrapper({
   authSelector: state => state.user,
@@ -27,6 +26,7 @@ export default (
       <Route path="signin" component={SignIn} />
       <Route component={AuthenticatedRoutes}>
         <Route path="dashboard" component={Dashboard} />
+        <Route path="asteroids" component={Asteroids} />
         <Route component={AdminRoutes}>
           <Route path="/admin" component={Admin} />
           {/* PROTECTED BY ADMIN ACCESS */}

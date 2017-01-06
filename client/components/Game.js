@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
+// Demo Game
 import Demo from './demo-one/Demo';
 
 const Game = ({ user }) => (
     <div className="col l9">
-        Game
-        <Demo />
+        Games!
     </div>
 )
 

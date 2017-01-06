@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 const HighScore = ({ user }) => (
     <div className="col l3">
         HighScore
+        <a href="/asteroids">Asteroids</a>
     </div>
 )
 

@@ -1,28 +1,9 @@
-.alert-error {
-  color: #a94442;
-  background-color: #f2dede;
-  border-color: #ebccd1;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'PT Mono', serif;
+  color: #ffffff;
 }
-
-.alert {
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
-.navigation {
-    margin-bottom: 2rem;
-}
-
-.game-area {
-    border: 1px #999 dotted;
-    width: 100%;
-    height: 650px;
-    position: relative;
-}
-
-/* Reacteroids */
 canvas {
   display: block;
   background-color: #000000;
@@ -41,7 +22,6 @@ canvas {
   right: 20px;
 }
 .score {
-  color: #fff;
   display: block;
   position: absolute;
   top: 15px;
@@ -49,7 +29,6 @@ canvas {
   font-size: 20px;
 }
 .controls {
-  color: #fff;
   display: block;
   position: absolute;
   top: 15px;
@@ -61,7 +40,6 @@ canvas {
   line-height: 1.6;
 }
 .endgame{
-  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
