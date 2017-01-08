@@ -4,9 +4,8 @@ import Game from './Game';
 import HighScore from './HighScore';
 
 const Dashboard = ({ user }, props) => (
-  <div className="row">
+  <div>
       <Game />
-      <HighScore />
   </div>
 );
 

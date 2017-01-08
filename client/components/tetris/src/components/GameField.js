@@ -5,7 +5,7 @@ import Banner from './Banner.js';
 import CurrentTetromino from '../containers/CurrentTetromino.js';
 import ActiveTetrominos from '../containers/ActiveTetrominos.js';
 import gameConstants from '../gameConstants.js';
-import style from '../styles/styles.css';
+// import style from '../styles/styles.css';
 
 const { fieldHeight, fieldWidth } = gameConstants;
 
@@ -13,7 +13,7 @@ let GameField = ({ isPlaying, isPaused, isGameOver }) => {
 	if (isPlaying) {
 		return (
 			<div style={{display: 'inline'}}>
-				<div className={style.gameField}>
+				<div className="gameField">
 					<Stage width={fieldWidth} height={fieldHeight}>
 						<Layer>
 							<CurrentTetromino />

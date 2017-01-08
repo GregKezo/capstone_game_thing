@@ -4,8 +4,15 @@ import { connect } from 'react-redux';
 import Demo from './demo-one/Demo';
 
 const Game = ({ user }) => (
-    <div className="col l9">
-        Games!
+    <div className="row">
+        <div className="col l9">
+            Games!
+        </div>
+        <div className="col l3">
+            <a href="/asteroids">Asteroids</a><br />
+            <a href="/tetris">Tetris</a><br />
+            <a href="/jeopardy">Jeopardy</a>
+        </div>
     </div>
 )
 

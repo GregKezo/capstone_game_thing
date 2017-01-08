@@ -27,7 +27,7 @@ class SignUp extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <h2 className="center">Sign Up</h2>
         <form onSubmit={this.handleSubmit}>
           <input type="email" placeholder="email" ref="email" required={true} />
@@ -37,6 +37,6 @@ class SignUp extends React.Component {
       </div>
     )
   }
-} 
+}
 
 export default connect()(SignUp);

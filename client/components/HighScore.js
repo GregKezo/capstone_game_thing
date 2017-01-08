@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 
 const HighScore = ({ user }) => (
     <div className="col l3">
-        HighScore
-        <a href="/asteroids">Asteroids</a>
+        <a href="/asteroids">Asteroids</a><br />
+        <a href="/tetris">Tetris</a>
     </div>
 )
 

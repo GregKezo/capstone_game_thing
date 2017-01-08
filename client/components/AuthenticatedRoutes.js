@@ -9,7 +9,7 @@ class AuthenticatedRoutes extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         { this.props.user._id ? this.props.children : null }
       </div>
     )
@@ -21,4 +21,3 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps)(AuthenticatedRoutes);
-

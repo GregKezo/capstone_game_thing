@@ -26,6 +26,7 @@ class App extends React.Component {
         return (
           <div>
             <li><Link to="/">Home</Link></li>
+            <li><Link to="/dashboard">Dashboard</Link></li>
             <li><a style={{ cursor: 'pointer' }} onClick={this.logout}>Logout</a></li>
           </div>
         )

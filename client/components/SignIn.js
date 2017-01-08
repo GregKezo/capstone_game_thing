@@ -23,10 +23,10 @@ class SignIn extends React.Component {
     }).fail( err => {
     });
   }
-  
+
   render() {
     return (
-      <div>
+      <div className="container">
         <h2 className="center">Sign In</h2>
         <form onSubmit={this.handleSubmit}>
           <input type="email" required={true} ref="email" placeholder="email" />
