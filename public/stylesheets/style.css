@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Iceland');
+
 .alert-error {
   color: #a94442;
   background-color: #f2dede;
@@ -20,6 +22,61 @@
     width: 100%;
     height: 650px;
     position: relative;
+}
+
+nav .brand-logo {
+    top: 0.45rem;
+}
+
+.home-caption {
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.home-caption figcaption {
+    font-family: 'Iceland', cursive;
+    text-align: center;
+    font-size: 5rem;
+}
+
+h2 {
+    font-family: 'Iceland', cursive;
+    margin-top: 0 !important;
+}
+
+/* Games Navigation */
+.game-nav {
+    border-radius: 4px;
+    display: block;
+    padding: 0.3rem 0;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0.2rem;
+    position: relative;
+    font-family: 'Iceland', cursive;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.game-nav:before {
+    border: 1px rgba(255,255,255,0.5) solid;
+    border-radius: 4px;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.game-nav:after {
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%);
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* Reacteroids */

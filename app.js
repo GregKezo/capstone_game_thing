@@ -12,6 +12,7 @@ mongoose.connect(mongoUri);
 
 var routes = require('./routes/index');
 var auth = require('./routes/auth');
+var tetris = require('./routes/tetris');
 
 var app = express();
 
@@ -52,6 +53,8 @@ passport.deserializeUser(User.deserializeUser());
 //PUT API ROUTES HERE vvv
 //
 app.use('/api/auth', auth);
+
+app.use('/tetris', tetris);
 //
 //PUT API ROUTES HERE ^^^^
 

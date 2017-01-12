@@ -25,7 +25,6 @@ class App extends React.Component {
       case 'user':
         return (
           <div>
-            <li><Link to="/">Home</Link></li>
             <li><Link to="/dashboard">Dashboard</Link></li>
             <li><a style={{ cursor: 'pointer' }} onClick={this.logout}>Logout</a></li>
           </div>
@@ -54,7 +53,7 @@ class App extends React.Component {
       <div>
         <nav className="light-blue darken-4 navigation">
           <div className="nav-wrapper">
-            <Link to="/" className="brand-logo">My Logo</Link>
+            <Link to="/" className="brand-logo"><img src="/assets/GameHub-logo-sm.png" /></Link>
             <a href="#" data-activates="mobile" className="button-collapse">
               <i className="fa fa-bars"></i>
             </a>

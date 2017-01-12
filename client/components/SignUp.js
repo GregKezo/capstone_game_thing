@@ -28,7 +28,7 @@ class SignUp extends React.Component {
   render() {
     return (
       <div className="container">
-        <h2 className="center">Sign Up</h2>
+        <h2>Sign Up</h2>
         <form onSubmit={this.handleSubmit}>
           <input type="email" placeholder="email" ref="email" required={true} />
           <input type="password" placeholder="password" ref="password" required={true} />

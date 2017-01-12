@@ -3,7 +3,12 @@ import { connect } from 'react-redux';
 
 const Home = ({ user}, props) => (
     <div className="container">
-        HOME PAGE!
+        <figure className="home-caption">
+            <img src="assets/GameHub-logo-lg.png" />
+            <figcaption>
+                A Portal for React Based Games
+            </figcaption>
+        </figure>
     </div>
 );
 

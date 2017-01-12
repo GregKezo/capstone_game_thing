@@ -27,7 +27,7 @@ class SignIn extends React.Component {
   render() {
     return (
       <div className="container">
-        <h2 className="center">Sign In</h2>
+        <h2>Sign In</h2>
         <form onSubmit={this.handleSubmit}>
           <input type="email" required={true} ref="email" placeholder="email" />
           <input type="password" required={true} ref="password" placeholder="password" />

@@ -10,7 +10,6 @@ import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
 import NoMatch from './components/NoMatch';
 import Asteroids from './components/Asteroids';
-import Tetris from './components/Tetris';
 import Jeopardy from './components/Jeopardy';
 
 const AdminAccess = UserAuthWrapper({
@@ -31,7 +30,6 @@ export default (
       <Route component={AuthenticatedRoutes}>
         <Route path="dashboard" component={Dashboard} />
         <Route path="asteroids" component={Asteroids} />
-        <Route path="tetris" component={Tetris} />
         <Route path="jeopardy" component={Jeopardy} />
         <Route component={AdminRoutes}>
           <Route path="/admin" component={Admin} />
