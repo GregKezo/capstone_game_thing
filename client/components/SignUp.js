@@ -28,12 +28,24 @@ class SignUp extends React.Component {
   render() {
     return (
       <div className="container">
-        <h2>Sign Up</h2>
-        <form onSubmit={this.handleSubmit}>
-          <input type="email" placeholder="email" ref="email" required={true} />
-          <input type="password" placeholder="password" ref="password" required={true} />
-          <button className="btn">Sign Up</button>
-        </form>
+          <div className="row">
+              <div className="col l12">
+                  <h2>Sign Up</h2>
+                  <form onSubmit={this.handleSubmit}>
+                      <div className="row">
+                          <div className="col l5 input-field">
+                              <input type="email" placeholder="email" ref="email" required={true} />
+                          </div>
+                          <div className="col l5 input-field">
+                              <input type="password" placeholder="password" ref="password" required={true} />
+                          </div>
+                          <div className="col l12">
+                              <button className="btn orange darken-4">Sign Up</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
       </div>
     )
   }

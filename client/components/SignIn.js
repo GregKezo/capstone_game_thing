@@ -27,16 +27,27 @@ class SignIn extends React.Component {
   render() {
     return (
       <div className="container">
-        <h2>Sign In</h2>
-        <form onSubmit={this.handleSubmit}>
-          <input type="email" required={true} ref="email" placeholder="email" />
-          <input type="password" required={true} ref="password" placeholder="password" />
-          <button className="btn">Sign In</button>
-        </form>
+          <div className="row">
+              <div className="col l12">
+                  <h2>Sign In</h2>
+                  <form onSubmit={this.handleSubmit}>
+                      <div className="row">
+                          <div className="col l5 input-field">
+                              <input type="email" required={true} ref="email" placeholder="email" />
+                          </div>
+                          <div className="col l5 input-field">
+                              <input type="password" required={true} ref="password" placeholder="password" />
+                          </div>
+                          <div className="col l12">
+                              <button className="btn orange darken-4">Sign In</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
       </div>
     )
   }
-
 }
 
 export default connect()(SignIn);

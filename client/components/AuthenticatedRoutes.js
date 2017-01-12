@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { refreshLogin } from '../actions/auth';
+import SignIn from './SignIn';
 
 class AuthenticatedRoutes extends React.Component {
   componentDidMount() {
@@ -10,7 +11,7 @@ class AuthenticatedRoutes extends React.Component {
   render() {
     return (
       <div className="container">
-        { this.props.user._id ? this.props.children : null }
+        { this.props.user._id ? this.props.children : <SignIn /> }
       </div>
     )
   }
